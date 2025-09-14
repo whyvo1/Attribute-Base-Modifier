@@ -1,0 +1,27 @@
+{
+	"schemaVersion": 1,
+	"id": "abm",
+	"version": "${version}",
+	"name": "Attribute Base Modifier",
+	"description": "Modify attribute's base value!",
+	"authors": [
+		"Whyvo"
+	],
+	"license": "MIT",
+	"icon": "assets/abm/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.whyvo.abm.AttributeBaseModifier"
+		]
+	},
+	"mixins": [
+		"abm.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.17.2",
+		"minecraft": ">=1.21.2",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
