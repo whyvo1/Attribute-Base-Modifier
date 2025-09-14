@@ -16,14 +16,14 @@ JSON format:
 
 - `<root>` ***Compound{}***
   - `include` ***Compound{}***  A include filter. Only the type specified here will be included. **Optional**, all type of mobs will be included if omitted. 
-    - `type` ***String* | *List[]***  List the mobs that need to be included.
+    - `type` ***String* | *Array[]***  List the mobs that need to be included.
       - ***String***  either an ID or a tag(starts with `#`). *e.g*. `minecraft:zombie`, `#minecraft:undead`.
     - `spawn_group` ***String***  This means all mobs of this spawn group is included. Must be one of `monster`, `creature`, `ambient`, `water_creature`, `underground_water_creature`, `water_ambient`, `misc`, or `axolotls`. Has no effect when coexists with `type`.
   - `exclude` ***Compound{}***  List the mobs that need to be excluded. The format is the same as `include`. **Optional**, no mobs will be excluded if omitted.
-  - `modifies` ***List[]***  Defines the modification methods.
+  - `modifies` ***Array[]***  Defines the modification methods.
     - ***Compound{}***  Define an attribute and the modification methods. If the mob lacks default value of this attribute, this modification will be skipped.
       - `attribute` ***String***  ID of the attribute . *e.g*. `minecraft:max_health`.
-      - `modifiers` ***List[]***  The modification methods. The base values are calculated sequentially in order.
+      - `modifiers` ***Array[]***  The modification methods. The base values are calculated sequentially in order.
         - ***Compound{}***  A modification method.
           - `type` ***String***  The type of modification(operator). Must be one of `set`, `add`, `multiply`.
           - `value` ***Number***  The value of this modification. Will be parsed as a double value.
