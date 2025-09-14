@@ -1,4 +1,4 @@
-# Attribute-Base-Modifier
+# Attribute-Base-Modifier (ABM)
 
 The [MIT License](https://github.com/whyvo1/Attribute-Base-Modifier/blob/main/LICENSE) applies to all branches.
 
