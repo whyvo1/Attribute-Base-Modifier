@@ -1,3 +1,5 @@
+**[中文](https://github.com/whyvo1/Attribute-Base-Modifier/blob/main/README_CN.md)**
+
 # Attribute-Base-Modifier (ABM)
 
 The [MIT License](https://github.com/whyvo1/Attribute-Base-Modifier/blob/main/LICENSE) applies to all branches.
