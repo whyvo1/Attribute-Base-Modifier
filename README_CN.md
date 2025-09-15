@@ -29,7 +29,38 @@ JSON格式:
           - `value` ***数字***  修改的值。将被解析为一个double数值。
   - `default_enable` ***布尔值***  是否默认启用此规则。见“调试命令”获取更多信息。**可选**，默认为`true`。
 
+示例：（有些ID可能不正确）
 
+```json
+{
+    "include": {
+        "spawn_group": "monster"
+    },
+    "exclude": {
+        "type": "#c:bosses"
+    },
+    "modifies": [
+        {
+            "attribute": "minecraft:max_health",
+            "modifiers": [
+                {
+                    "type": "add",
+                    "value": 100
+                }
+            ]
+        },
+        {
+            "attribute": "minecraft:armor",
+            "modifiers": [
+                {
+                    "type": "set",
+                    "value": 10
+                }
+            ]
+        }
+    ]
+}
+```
 
 ### 调试命令
 
