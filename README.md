@@ -31,7 +31,38 @@ JSON format:
           - `value` ***Number***  The value of this modification. Will be parsed as a double value.
   - `default_enable` ***Boolean***  Whether to enable this rule by default. See "Debug Command" for more information. **Optional**, defaults to `true`.
 
+Example: (**some IDs may be not correct**)
 
+```json
+{
+    "include": {
+        "spawn_group": "monster"
+    },
+    "exclude": {
+        "type": "#c:bosses"
+    },
+    "modifies": [
+        {
+            "attribute": "minecraft:max_health",
+            "modifiers": [
+                {
+                    "type": "add",
+                    "value": 100
+                }
+            ]
+        },
+        {
+            "attribute": "minecraft:armor",
+            "modifiers": [
+                {
+                    "type": "set",
+                    "value": 10
+                }
+            ]
+        }
+    ]
+}
+```
 
 ### Debug Command
 
